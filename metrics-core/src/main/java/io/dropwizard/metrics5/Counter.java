@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.LongAdder;
 /**
  * An incrementing and decrementing counter metric.
  */
-public class Counter implements Metric, Counting {
+public class Counter extends MyTags implements Metric, Counting {
     private final LongAdder count;
 
     public Counter() {
